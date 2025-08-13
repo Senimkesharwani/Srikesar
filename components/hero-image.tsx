@@ -11,7 +11,7 @@ export function HeroImage() {
         {/* Main Image */}
         <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl hover:-translate-y-2 transition-all duration-500">
           <Image
-            src="/images/hello.jpeg?w=500&h=600&fit=crop&crop=face"
+            src="/images/home.png"
             alt="Srikesar - Fashion Influencer"
             width={500}
             height={600}

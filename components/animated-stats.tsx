@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useEffect, useState } from "react"
 import { Heart, Play, Briefcase } from "lucide-react"
 
@@ -28,7 +27,7 @@ function StatItem({ icon: Icon, value, label, delay, color }: StatItemProps) {
       }`}
     >
       <div
-        className={`w-16 h-16 mx-auto mb-3 rounded-2xl ${color} flex items-center justify-center shadow-lg hover-lift`}
+        className={`w-16 h-16 mx-auto mb-3 rounded-2xl ${color} flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300`}
       >
         <Icon className="w-8 h-8 text-white" />
       </div>
@@ -38,9 +37,9 @@ function StatItem({ icon: Icon, value, label, delay, color }: StatItemProps) {
   )
 }
 
-export function AnimatedStats() {
+export default function AnimatedStats() {
   return (
-    <div className="grid grid-cols-3 gap-8 max-w-md">
+    <div className="grid grid-cols-3 gap-8 max-w-md mx-auto">
       <StatItem
         icon={Heart}
         value="450K+"

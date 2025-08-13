@@ -1,17 +1,17 @@
 "use client"
 
-import { ScrollAnimation } from "./scroll-animations"
+import ScrollAnimation from "./scroll-animations"
 
 const brandLogos = [
-  { name: "Zara", color: "from-gray-900 to-gray-700" },
-  { name: "Beardo", color: "from-orange-500 to-red-500" },
-  { name: "The Man Company", color: "from-blue-600 to-indigo-600" },
-  { name: "H&M", color: "from-red-500 to-pink-500" },
-  { name: "Nike", color: "from-gray-800 to-black" },
-  { name: "Adidas", color: "from-blue-500 to-blue-700" },
+  { name: "Imagine", color: "from-gray-900 to-gray-700" },
+  { name: "Madan Stores", color: "from-orange-500 to-red-500" },
+  { name: "Nykaa", color: "from-blue-600 to-indigo-600" },
+  { name: "Nivea", color: "from-red-500 to-pink-500" },
+  { name: "Moj", color: "from-gray-800 to-black" },
+  { name: "GotChosen", color: "from-blue-500 to-blue-700" },
 ]
 
-export function AnimatedBrands() {
+export default function AnimatedBrands() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
       {brandLogos.map((brand, index) => (

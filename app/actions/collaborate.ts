@@ -29,30 +29,29 @@ export async function submitCollaborationForm(prevState: any, formData: FormData
 
     console.log("Processing collaboration form submission:", validatedData)
 
-    // Send notification email to admin
+    // Send notification email to admin (Srikesar)
     const notificationResult = await sendCollaborationNotification(validatedData)
 
     // Send confirmation email to user
     const confirmationResult = await sendCollaborationConfirmation(validatedData)
 
-    // Check if emails were sent successfully
     if (!notificationResult.success) {
-      console.error("Failed to send collaboration notification email:", notificationResult.error)
-      throw new Error("Failed to send notification email")
+      console.error("Failed to send notification email:", notificationResult.error)
     }
 
     if (!confirmationResult.success) {
-      console.error("Failed to send collaboration confirmation email:", confirmationResult.error)
-      // Don't throw error for confirmation email failure, just log it
-      console.warn("Confirmation email failed, but notification was sent successfully")
+      console.error("Failed to send confirmation email:", confirmationResult.error)
     }
 
+    // Even if email fails, we still want to show success to user
     console.log("Collaboration form processed successfully")
 
     return {
       success: true,
       message:
-        "Thank you for your collaboration inquiry! I'll review your project details and get back to you within 24-48 hours with a detailed proposal. Check your email for confirmation.",
+        notificationResult.success && confirmationResult.success
+          ? "Thank you for your collaboration inquiry! I'll review your project details and get back to you within 24-48 hours with a detailed proposal. Check your email for confirmation."
+          : "Thank you for your collaboration inquiry! I'll review your project details and get back to you within 24-48 hours. (Note: There was an issue sending the confirmation email, but your inquiry was received.)",
     }
   } catch (error) {
     console.error("Collaboration form error:", error)
@@ -64,18 +63,9 @@ export async function submitCollaborationForm(prevState: any, formData: FormData
       }
     }
 
-    // Check if it's an email service error
-    if (error instanceof Error && error.message.includes("email")) {
-      return {
-        success: false,
-        message:
-          "There was an issue sending your inquiry. Please try again or contact me directly at contact@srikesar.com",
-      }
-    }
-
     return {
       success: false,
-      message: "Something went wrong. Please try again later or contact me directly at contact@srikesar.com",
+      message: "Something went wrong. Please try again later or contact me directly at srikesar18@gmail.com",
     }
   }
 }

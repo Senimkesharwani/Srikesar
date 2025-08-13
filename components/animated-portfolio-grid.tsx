@@ -1,6 +1,6 @@
 "use client"
 
-import { ScrollAnimation } from "./scroll-animations"
+import ScrollAnimation from "./scroll-animations"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Heart, MessageCircle, ExternalLink } from "lucide-react"
@@ -13,7 +13,7 @@ const portfolioItems = [
     brand: "Zara",
     title: "Summer Collection Campaign",
     description: "Showcasing the latest summer trends with a minimalist aesthetic",
-    image: "/images/hello.jpeg?w=500&h=600&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=400&fit=crop",
     likes: "25.4K",
     comments: "892",
   },
@@ -23,7 +23,7 @@ const portfolioItems = [
     brand: "Beardo",
     title: "Beard Care Essentials",
     description: "Complete grooming routine featuring premium beard care products",
-    image: "/images/hello.jpeg?w=500&h=600&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
     likes: "18.7K",
     comments: "456",
   },
@@ -33,7 +33,7 @@ const portfolioItems = [
     brand: "Tourism Board",
     title: "Goa Travel Diary",
     description: "Exploring the hidden gems of Goa with style and authenticity",
-    image: "/images/hello.jpeg?w=500&h=600&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=400&h=400&fit=crop",
     likes: "32.1K",
     comments: "1.2K",
   },
@@ -43,7 +43,7 @@ const portfolioItems = [
     brand: "H&M",
     title: "Sustainable Fashion",
     description: "Highlighting eco-friendly fashion choices for the modern man",
-    image: "/images/hello.jpeg?w=500&h=600&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
     likes: "21.8K",
     comments: "678",
   },
@@ -53,7 +53,7 @@ const portfolioItems = [
     brand: "Nike",
     title: "Fitness & Style",
     description: "Merging athletic wear with everyday fashion for the active lifestyle",
-    image: "/images/hello.jpeg?w=500&h=600&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
     likes: "28.3K",
     comments: "934",
   },
@@ -63,13 +63,13 @@ const portfolioItems = [
     brand: "The Man Company",
     title: "Skincare Routine",
     description: "Daily skincare essentials for the modern gentleman",
-    image: "/images/hello.jpeg?w=500&h=600&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face",
     likes: "16.9K",
     comments: "423",
   },
 ]
 
-export function AnimatedPortfolioGrid() {
+export default function AnimatedPortfolioGrid() {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {portfolioItems.map((item, index) => (

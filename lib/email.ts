@@ -120,7 +120,7 @@ export async function sendContactConfirmation(data: ContactEmailData) {
             </p>
 
             <div style="text-align: center; margin: 25px 0;">
-              <a href="https://www.instagram.com/srikesar_official_18" 
+              <a href="https://instagram.com/srikesar_official_18" 
                  style="background: #e91e63; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; margin: 0 10px; display: inline-block;">
                 📱 Instagram
               </a>
@@ -273,7 +273,7 @@ export async function sendCollaborationConfirmation(data: CollaborationEmailData
                  style="background: #6f42c1; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; margin: 0 10px; display: inline-block;">
                 💼 Portfolio
               </a>
-              <a href="https://www.instagram.com/srikesar_official_18" 
+              <a href="https://instagram.com/srikesar_official_18" 
                  style="background: #e91e63; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; margin: 0 10px; display: inline-block;">
                 📱 Instagram
               </a>

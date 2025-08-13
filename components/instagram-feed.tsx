@@ -49,7 +49,7 @@ export async function InstagramFeed({
 
       {showViewMore && (
         <div className="text-center mt-8">
-          <Link href="https://www.instagram.com/srikesar_official_18" target="_blank" rel="noopener noreferrer">
+          <Link href="https://instagram.com/srikesar_official_18" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outline"
               className="border-stone-300 text-stone-700 hover:bg-stone-100 rounded-full px-6 bg-transparent"

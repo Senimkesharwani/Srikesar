@@ -21,7 +21,7 @@ export function PhoneMockup() {
               <div className="flex items-center space-x-3">
                 <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-pink-500 p-1">
                   <Image
-                    src="/images/hello.jpeg?w=500&h=600&fit=crop&crop=face"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
                     alt="Profile"
                     width={80}
                     height={80}
@@ -56,7 +56,7 @@ export function PhoneMockup() {
             <div className="mb-4">
               <p className="text-xs text-gray-800 leading-relaxed">
                 ✨ Fashion & Lifestyle Creator
-                <br />📍 Mumbai, India
+                <br />📍 Prayagraj, India
                 <br />💼 Brand Collaborations
                 <br />👇 Latest Content
               </p>
@@ -73,14 +73,14 @@ export function PhoneMockup() {
               {[1, 2, 3, 4, 5, 6].map((i) => (
                 <div key={i} className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
                   <Image
-                    src={`/images/hello.jpeg-${
+                    src={`images/${
                       [
-                        "1441986300917-64674bd600d8",
-                        "1507003211169-0a1dd7228f2d",
-                        "1500648767791-00dcc994a43e",
-                        "1472099645785-5658abf4ff4e",
-                        "1519085360753-af0119f7cbe7",
-                        "1506794778202-cad84cf45f1d",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
                       ][i - 1]
                     }?w=100&h=100&fit=crop`}
                     alt={`Post ${i}`}

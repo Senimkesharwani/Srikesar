@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 import { Instagram, Youtube, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export function Navigation() {
+export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
 
@@ -23,7 +23,7 @@ export function Navigation() {
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/https://www.instagram.com/srikesar_official_18" className="font-serif text-2xl font-bold text-stone-900">
+          <Link href="/" className="font-serif text-2xl font-bold text-stone-900">
             Srikesar
           </Link>
 
@@ -45,7 +45,7 @@ export function Navigation() {
           {/* Social Links & Mobile Menu */}
           <div className="flex items-center space-x-4">
             <a
-              href="https://www.instagram.com/srikesar_official_18"
+              href="https://instagram.com/srikesar_official_18"
               target="_blank"
               rel="noopener noreferrer"
               className="text-stone-600 hover:text-pink-600 transition-colors"
@@ -53,7 +53,7 @@ export function Navigation() {
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="https://youtube.com/@srikesar"
+              href="https://youtube.com/@srijalkesharwani377"
               target="_blank"
               rel="noopener noreferrer"
               className="text-stone-600 hover:text-red-600 transition-colors"

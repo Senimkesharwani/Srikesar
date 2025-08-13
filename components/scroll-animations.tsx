@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useEffect, useRef, useState } from "react"
 
 interface ScrollAnimationProps {
@@ -13,7 +12,7 @@ interface ScrollAnimationProps {
   rootMargin?: string
 }
 
-export function ScrollAnimation({
+export default function ScrollAnimation({
   children,
   direction = "up",
   delay = 0,
