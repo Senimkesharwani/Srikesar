@@ -21,7 +21,7 @@ export function PhoneMockup() {
               <div className="flex items-center space-x-3">
                 <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-pink-500 p-1">
                   <Image
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+                    src="/images/Home.png"
                     alt="Profile"
                     width={80}
                     height={80}
