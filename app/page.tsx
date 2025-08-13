@@ -87,7 +87,7 @@ export default function HomePage() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
                 <div className="relative">
                   <Image
-                    src="/images/home.png"
+                    src="/images/Home.png"
                     alt="Srikesar - Fashion & Lifestyle Influencer"
                     width={600}
                     height={750}
