@@ -12,18 +12,18 @@ import ScrollAnimation from "@/components/scroll-animations"
 export default function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState("All")
 
-  const categories = ["All", "Fashion", "Shooting", "Travel", "Lifestyle"]
+  const categories = ["All", "Fashion", "Shooting", "Collab", "Lifestyle"]
 
   const portfolioItems = [
     {
       id: 1,
       category: "Fashion",
-      brand: "Zara",
-      title: "Summer Collection Campaign",
-      description: "Showcasing the latest summer trends with a minimalist aesthetic",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=400&fit=crop",
-      likes: "25.4K",
-      comments: "892",
+      brand: "",
+      title: "Winter Collection",
+      description: "Presenting the newest winter styles with a sleek, minimalist touch",
+      image: "/portfolioImg/fashion1.jpeg",
+      likes: "",
+      comments: "",
       engagement: "8.2%",
       type: "Sponsored Post",
       color: "from-pink-500 to-rose-500",
@@ -31,38 +31,38 @@ export default function PortfolioPage() {
     {
       id: 2,
       category: "Shooting",
-      brand: "Beardo",
-      title: "Beard Care Essentials",
-      description: "Complete Shooting routine featuring premium beard care products",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      likes: "18.7K",
-      comments: "456",
+      brand: "",
+      title: "Bridal View Shooting",
+      description: "Capturing timeless elegance and intricate details in a stunning bridal-themed photo shoot",
+      image: "/portfolioImg/shooting2.jpeg",
+      likes: "",
+      comments: "",
       engagement: "7.8%",
-      type: "Product Review",
+      type: "Brand Collaboration",
       color: "from-orange-500 to-red-500",
     },
     {
       id: 3,
-      category: "Travel",
-      brand: "Tourism Board",
-      title: "Goa Travel Diary",
-      description: "Exploring the hidden gems of Goa with style and authenticity",
-      image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=400&h=400&fit=crop",
-      likes: "32.1K",
-      comments: "1.2K",
+      category: "Collab",
+      brand: "",
+      title: "Vision in Style",
+      description: "A bold Apple collab fusing innovation with contemporary fashion.",
+      image: "/portfolioImg/collab2.jpeg",
+      likes: "",
+      comments: "",
       engagement: "9.5%",
-      type: "Travel Content",
+      type: "Sponsored Post",
       color: "from-blue-500 to-cyan-500",
     },
     {
       id: 4,
       category: "Fashion",
-      brand: "H&M",
-      title: "Sustainable Fashion",
-      description: "Highlighting eco-friendly fashion choices for the modern man",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
-      likes: "21.8K",
-      comments: "678",
+      brand: "",
+      title: "Monochrome Magic",
+      description: "Showcasing chic and contemporary fashion choices for the modern woman",
+      image: "/portfolioImg/fashion2.jpeg",
+      likes: "",
+      comments: "",
       engagement: "8.9%",
       type: "Brand Collaboration",
       color: "from-green-500 to-emerald-500",
@@ -70,12 +70,12 @@ export default function PortfolioPage() {
     {
       id: 5,
       category: "Lifestyle",
-      brand: "Nike",
-      title: "Fitness & Style",
-      description: "Merging athletic wear with everyday fashion for the active lifestyle",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      likes: "28.3K",
-      comments: "934",
+      brand: "",
+      title: "Neon Nights",
+      description: "Immersing in the vibrant nightlife with chic ensembles and a touch of urban sophistication",
+      image: "/portfolioImg/lifestyle1.jpeg",
+      likes: "",
+      comments: "",
       engagement: "9.1%",
       type: "Lifestyle Content",
       color: "from-purple-500 to-violet-500",
@@ -83,53 +83,53 @@ export default function PortfolioPage() {
     {
       id: 6,
       category: "Shooting",
-      brand: "The Man Company",
-      title: "Skincare Routine",
-      description: "Daily skincare essentials for the modern gentleman",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face",
-      likes: "16.9K",
-      comments: "423",
+      brand: "",
+      title: "Veil & Vision",
+      description: "Capturing the dreamy allure of a bride framed in delicate veils and intricate details",
+      image: "/portfolioImg/shooting1.jpeg",
+      likes: "",
+      comments: "",
       engagement: "7.4%",
-      type: "Tutorial",
+      type: "Brand Collaboration",
       color: "from-indigo-500 to-blue-500",
     },
     {
       id: 7,
       category: "Fashion",
-      brand: "Adidas",
-      title: "Streetwear Essentials",
-      description: "Urban fashion meets comfort in this streetwear showcase",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
-      likes: "24.6K",
-      comments: "756",
+      brand: "",
+      title: "Urban Chic Edit",
+      description: "A street-style inspired shoot capturing bold silhouettes and contemporary trends for the city-ready wardrobe",
+      image: "/portfolioImg/fashion3.jpeg",
+      likes: "",
+      comments: "",
       engagement: "8.7%",
       type: "Fashion Content",
       color: "from-gray-700 to-gray-900",
     },
     {
       id: 8,
-      category: "Travel",
-      brand: "Airbnb",
-      title: "Mumbai City Guide",
-      description: "Discovering Mumbai's fashion scene and cultural hotspots",
-      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=400&h=400&fit=crop",
-      likes: "19.4K",
-      comments: "567",
+      category: "Collab",
+      brand: "",
+      title: "Apple Imagine Shoot",
+      description: "Creating a sleek, modern visual story that blends cutting-edge Apple technology with contemporary lifestyle aesthetics",
+      image: "/portfolioImg/collab1.jpeg",
+      likes: "",
+      comments: "",
       engagement: "8.3%",
-      type: "City Guide",
+      type: "Sponsored Post",
       color: "from-teal-500 to-green-500",
     },
     {
       id: 9,
       category: "Lifestyle",
-      brand: "Apple",
-      title: "Tech & Style",
-      description: "How technology seamlessly integrates with modern lifestyle",
-      image: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=400&fit=crop&crop=face",
-      likes: "22.7K",
-      comments: "689",
+      brand: "",
+      title: "Fitness with Flair",
+      description: "Blending athleisure trends with an active lifestyle for a dynamic and stylish look",
+      image: "/portfolioImg/lifestyle2.jpeg",
+      likes: "",
+      comments: "",
       engagement: "8.6%",
-      type: "Tech Review",
+      type: "Shoot",
       color: "from-slate-600 to-slate-800",
     },
   ]
@@ -177,7 +177,7 @@ export default function PortfolioPage() {
                 <div className="bg-gradient-to-br from-blue-500 to-cyan-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Users className="h-8 w-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-1">15M+</div>
+                <div className="text-3xl font-bold text-gray-900 mb-1">10M+</div>
                 <div className="text-gray-600">Total Reach</div>
               </div>
             </ScrollAnimation>
@@ -250,7 +250,7 @@ export default function PortfolioPage() {
                         alt={item.title}
                         width={400}
                         height={400}
-                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-70 object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
@@ -322,7 +322,7 @@ export default function PortfolioPage() {
             <ScrollAnimation direction="up" delay={200}>
               <div className="group">
                 <div className="text-4xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
-                  15M+
+                  10M+
                 </div>
                 <div className="text-gray-600">Total Reach</div>
               </div>
